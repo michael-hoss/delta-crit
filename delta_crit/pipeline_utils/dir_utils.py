@@ -4,7 +4,7 @@ import tempfile
 import uuid
 from datetime import datetime
 
-from research.delta_crit.crime_utils.crime_utils import get_config_yaml, get_scenario_xml
+from delta_crit.crime_utils.crime_utils import get_config_yaml, get_scenario_xml
 
 
 def create_empty_workdir() -> str:

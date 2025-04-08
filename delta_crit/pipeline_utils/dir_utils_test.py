@@ -3,7 +3,7 @@ import sys
 
 import pytest
 
-from research.delta_crit.pipeline_utils.dir_utils import set_up_populated_workdir
+from delta_crit.pipeline_utils.dir_utils import set_up_populated_workdir
 
 
 def test_set_up_populated_workdir_pass(scenario_id_garching) -> None:

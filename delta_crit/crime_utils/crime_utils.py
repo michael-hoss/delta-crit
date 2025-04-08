@@ -12,7 +12,7 @@ from commonroad.visualization.mp_renderer import MPRenderer  # type: ignore
 from commonroad_crime.data_structure.configuration import CriMeConfiguration, GeneralConfiguration  # type: ignore
 from omegaconf import DictConfig, OmegaConf
 
-from base.dict_utils.dict_utils import remove_key_recursively
+from delta_crit.utils.dict_utils import remove_key_recursively
 
 
 def get_local_crime_root() -> str:

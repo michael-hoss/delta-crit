@@ -1,31 +1,21 @@
-# Perceptest
+[![CI](https://github.com/michael-hoss/delta-crit/actions/workflows/pytest.yaml/badge.svg)](https://github.com/michael-hoss/delta-crit/actions/workflows/pytest.yaml)
 
-[![Pytests with bazel](https://github.com/michael-hoss/perceptest/actions/workflows/pytest_with_bazel.yaml/badge.svg)](https://github.com/michael-hoss/perceptest/actions/workflows/pytest_with_bazel.yaml)
 
-Test the object-based environment perception of automated driving systems.
+# DeltaCrit
 
-## Directory structure
-
-- `base`: multi-purpose utilities and functional code
-- `inputs`: read input data and convert them to needed formats
-    - `artery`: read logs from the Artery simulator; convert to nuScenes format
-    - `nuscenes`: helpers for the nuScenes 3D object tracking evaluation
-- `research`: code for specific academic publications
-    - `v2x_eval`: Evaluate own object tracking data on nuscenes tracking metrics
-    - `delta_crit`: (WIP) Compare criticality metrics between reference and tested object lists to infer perception safety
-    - `metric_bench`: (TBD) Analyze how well certain metrics can make statements about the perception quality
-- `third_party`: third-party software as git submodules
+Quantify perception safety by the criticality delta between perceived and reference scene.
 
 ## Run the code on your own
 
-- Create a Python 3.10 environment for perceptest via miniconda or similar
-- Install the Python requirements into your environment: `pip install -r requirements.txt`
-- Install [bazel](https://bazel.build/)
-    - Via [bazelisk](https://github.com/bazelbuild/bazelisk), you automatically get the version given in `.bazelversion`
-    - The most basic way is to download bazelisk's released binaries, place them under `/usr/local/bin/`, and make them executable
-- Run an executable with `bazel run //path/to:executable`
+```bash
+conda create --name delta_crit_310 python=3.10
+conda activate delta_crit_310
+pip install -r requirements-dev.txt
+python -m pytest
+```
 
 
-## Contribute to perceptest
+
+## Develop in DeltaCrit
 
 See [CONTRIBUTING.md](CONTRIBUTING.md).

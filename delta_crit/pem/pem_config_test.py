@@ -4,7 +4,7 @@ import tempfile
 
 import pytest
 
-from research.delta_crit.pem.pem_config import PemConfig, Perror, pem_config_from_json, pem_config_to_json
+from delta_crit.pem.pem_config import PemConfig, Perror, pem_config_from_json, pem_config_to_json
 
 
 def test_load_pem_config_from_list_of_dicts(geometrical_pem_config_list_of_dicts: list[dict]) -> None:

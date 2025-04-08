@@ -1,7 +1,7 @@
 from commonroad_crime.data_structure.crime_interface import CriMeConfiguration, CriMeInterface
 from commonroad_crime.measure import TTC  # type: ignore
 
-from research.delta_crit.crime_utils.crime_utils import get_crime_config
+from delta_crit.crime_utils.crime_utils import get_crime_config
 
 
 def main() -> None:

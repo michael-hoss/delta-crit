@@ -6,14 +6,14 @@ from math import isclose
 import pytest
 from commonroad.scenario.state import ExtendedPMState, InitialState  # type: ignore
 
-from research.delta_crit.crime_utils.assertion_utils import (
+from delta_crit.crime_utils.assertion_utils import (
     assert_constant_obstacle,
     assert_obstacles_present,
 )
-from research.delta_crit.crime_utils.crime_utils import CriMeConfiguration
-from research.delta_crit.pem.create_sut_scenario import create_sut_crime_config, create_sut_crime_config_files
-from research.delta_crit.pem.pem_config import PemConfig
-from research.delta_crit.pipeline_utils.dir_utils import set_up_populated_workdir
+from delta_crit.crime_utils.crime_utils import CriMeConfiguration
+from delta_crit.pem.create_sut_scenario import create_sut_crime_config, create_sut_crime_config_files
+from delta_crit.pem.pem_config import PemConfig
+from delta_crit.pipeline_utils.dir_utils import set_up_populated_workdir
 
 
 def test_create_sut_scenario_apply_to_all_objects(

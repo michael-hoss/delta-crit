@@ -4,7 +4,7 @@ from commonroad_crime.data_structure.configuration import CriMeConfiguration
 from commonroad_crime.data_structure.crime_interface import CriMeInterface
 from commonroad_crime.measure import TTC
 
-from research.delta_crit.crime_utils.crime_utils import get_crime_config
+from delta_crit.crime_utils.crime_utils import get_crime_config
 
 # Note that `CriMeConfiguration.general: GeneralConfiguration` holds all the necessary paths
 # for locating the (scenario) files.

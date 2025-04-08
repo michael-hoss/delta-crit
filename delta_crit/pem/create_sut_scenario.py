@@ -6,15 +6,15 @@ import numpy as np
 from commonroad.scenario.obstacle import DynamicObstacle  # type: ignore
 from commonroad.scenario.state import TraceState  # type: ignore
 
-from research.delta_crit.crime_utils.crime_utils import (
+from delta_crit.crime_utils.crime_utils import (
     CriMeConfiguration,
     Scenario,
     crime_paths_factory_for_delta_crit_example_data,
     get_crime_config,
     write_crime_config_deep,
 )
-from research.delta_crit.crime_utils.refresh_dynamic_obstacles import refresh_dynamic_obstacles
-from research.delta_crit.pem.pem_config import (
+from delta_crit.crime_utils.refresh_dynamic_obstacles import refresh_dynamic_obstacles
+from delta_crit.pem.pem_config import (
     PemConfig,
     Perror,
     int_hash_of_pem_config,

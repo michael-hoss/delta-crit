@@ -6,7 +6,7 @@ from typing import Union
 import pytest
 from commonroad.scenario.obstacle import DynamicObstacle, Obstacle, StaticObstacle  # type: ignore
 
-from research.delta_crit.crime_utils.crime_utils import (  # type: ignore
+from delta_crit.crime_utils.crime_utils import (  # type: ignore
     CriMeConfiguration,
     Scenario,
     get_crime_config,

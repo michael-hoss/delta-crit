@@ -1,4 +1,4 @@
-from research.delta_crit.crime_utils.crime_utils import (
+from delta_crit.crime_utils.crime_utils import (
     visualize_time_steps,
 )
 

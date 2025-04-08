@@ -4,16 +4,16 @@ from commonroad_crime.data_structure.base import CriMeBase
 from commonroad_crime.data_structure.crime_interface import CriMeInterface  # type: ignore
 from commonroad_crime.measure import BTN, CI, DA, HW, PF, STN, ALongReq, TTCStar  # type: ignore
 
-from research.delta_crit.crime_utils.crime_utils import get_crime_config
-from research.delta_crit.crime_utils.vis_utils import (
+from delta_crit.crime_utils.crime_utils import get_crime_config
+from delta_crit.crime_utils.vis_utils import (
     close_current_fig,
     save_delta_criticality_curve,
     save_scenario_figure_at_time_steps,
 )
-from research.delta_crit.delta_crime.delta_crime import compute_delta
-from research.delta_crit.pem.create_sut_scenario import create_sut_crime_config_files
-from research.delta_crit.pem.pem_config import PemConfig, Perror, pem_config_to_json
-from research.delta_crit.pipeline_utils.dir_utils import set_up_populated_workdir
+from delta_crit.delta_crime.delta_crime import compute_delta
+from delta_crit.pem.create_sut_scenario import create_sut_crime_config_files
+from delta_crit.pem.pem_config import PemConfig, Perror, pem_config_to_json
+from delta_crit.pipeline_utils.dir_utils import set_up_populated_workdir
 
 
 def main() -> None:
