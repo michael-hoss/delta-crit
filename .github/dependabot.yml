@@ -10,11 +10,8 @@ updates:
   - package-ecosystem: "pip"
     directories:
       - "/"
-      - "/base/**/*"
-      - "/inputs/**/*"
-      - "/research/**/*"
+      - "/delta_crit/**/*"
     schedule:
       interval: "monthly"
     ignore:
       - dependency-name: "commonroad-crime"  # only editable installed locally
-      - dependency-name: "nuscenes-devkit"  # not installed, just referred to locally via PYTHONPATH
