@@ -1,5 +1,0 @@
-# Own direct requirements
-dataclasses-json==0.6.7
-omegaconf==2.3.0
-
--e third_party/commonroad-crime
