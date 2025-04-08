@@ -11,5 +11,3 @@
 - Install the pre-commit hooks: `pre-commit install`
   - This will use `.pre-commit-config.yaml`
 - To run these hooks manually, use `pre-commit run --all-files`
-
-

@@ -10,8 +10,9 @@ def get_local_repo_root() -> str:
     installed_hints = ["envs", "conda", "venv", "site-packages"]
     for installed_hint in installed_hints:
         if installed_hint in repo_root:
-            raise OSError("Repository seems to be non-editable installed."
-                          f"Hint: {installed_hint} is in installed path.")
+            raise OSError(
+                f"Repository seems to be non-editable installed. Hint: {installed_hint} is in installed path."
+            )
     return repo_root
 
 
