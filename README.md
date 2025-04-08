@@ -1,4 +1,4 @@
-[![CI](https://github.com/michael-hoss/delta-crit/actions/workflows/pytest.yaml/badge.svg)](https://github.com/michael-hoss/delta-crit/actions/workflows/pytest.yaml)
+[![CI](https://github.com/michael-hoss/delta-crit/actions/workflows/ci.yaml/badge.svg)](https://github.com/michael-hoss/delta-crit/actions/workflows/ci.yaml)
 
 
 # DeltaCrit
