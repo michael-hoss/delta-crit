@@ -13,43 +13,15 @@ from commonroad_crime.data_structure.configuration import CriMeConfiguration, Ge
 from omegaconf import DictConfig, OmegaConf
 
 from delta_crit.utils.dict_utils import remove_key_recursively
-
-
-def get_local_crime_root() -> str:
-    PERCEPTEST_ROOT = os.environ.get("PERCEPTEST_REPO")
-    assert isinstance(PERCEPTEST_ROOT, str)
-    crime_root = os.path.join(PERCEPTEST_ROOT, "third_party/commonroad-crime")
-    return crime_root
-
-
-def get_delta_crit_root() -> str:
-    PERCEPTEST_ROOT = os.environ.get("PERCEPTEST_REPO")
-    assert isinstance(PERCEPTEST_ROOT, str)
-    delta_crit_root = os.path.join(PERCEPTEST_ROOT, "research/delta_crit")
-    return delta_crit_root
-
-
-def get_scenarios_dir() -> str:
-    delta_crit_root: str = get_delta_crit_root()
-    return os.path.join(delta_crit_root, "example_data/scenarios")
-
-
-def get_crime_configs_dir() -> str:
-    delta_crit_root: str = get_delta_crit_root()
-    return os.path.join(delta_crit_root, "example_data/crime_configs")
-
-
-def get_pem_configs_dir() -> str:
-    delta_crit_root: str = get_delta_crit_root()
-    return os.path.join(delta_crit_root, "example_data/pem_configs")
+from delta_crit.utils.file_utils import get_crime_configs_dir, get_local_crime_root, get_package_root, get_scenarios_dir
 
 
 def get_delta_crit_example_data_paths() -> GeneralConfiguration:
     delta_crit_paths = GeneralConfiguration(
         path_scenarios=get_scenarios_dir(),
         path_scenarios_batch=os.path.join(get_scenarios_dir(), "batch"),
-        path_output_abs=os.path.join(get_delta_crit_root(), "example_data/crime_outputs"),
-        path_logs=os.path.join(get_delta_crit_root(), "example_data/crime_outputs/logs"),
+        path_output_abs=os.path.join(get_package_root(), "example_data/crime_outputs"),
+        path_logs=os.path.join(get_package_root(), "example_data/crime_outputs/logs"),
         # Leave icons path at original on purpose for now
     )
     return deepcopy(delta_crit_paths)

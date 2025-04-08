@@ -24,14 +24,13 @@ from commonroad_crime.measure import (
     TTCStar,
 )
 
+from delta_crit.utils.file_utils import get_local_crime_root
+
 # ==== specify scenario ID
 scenario_id = "DEU_Gar-1_1_T-1"
 
 # ==== build configuration
-PERCEPTEST_ROOT = os.environ.get("PERCEPTEST_REPO")
-assert PERCEPTEST_ROOT
-CRIME_ROOT = os.path.join(PERCEPTEST_ROOT, "third_party/commonroad-crime")
-scenario_yaml = os.path.join(CRIME_ROOT, f"config_files/{scenario_id}.yaml")
+scenario_yaml = os.path.join(get_local_crime_root(), f"config_files/{scenario_id}.yaml")
 
 config = CriMeConfiguration.load(scenario_yaml, scenario_id)
 # or use the default one with: config = CriMeConfiguration()

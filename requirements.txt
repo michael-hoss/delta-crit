@@ -1,5 +1,4 @@
 # Own direct requirements
-notebook==7.3.2
 dataclasses-json==0.6.7
 omegaconf==2.3.0
 

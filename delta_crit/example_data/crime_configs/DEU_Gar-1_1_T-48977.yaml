@@ -6,7 +6,7 @@ general:
   # path_scenarios_batch: /tmp/delta_crit/20250220_103618.611015_52738b00
   # path_output_abs: /tmp/delta_crit/20250220_103618.611015_52738b00
   # path_logs: /tmp/delta_crit/20250220_103618.611015_52738b00
-  # path_icons: /home/mhoss/git/perceptest/third_party/commonroad-crime/docs/icons
+  # path_icons: /home/mhoss/git/delta-crit/third_party/commonroad-crime/docs/icons
   name_scenario: DEU_Gar-1_1_T-48977
 vehicle:
   width: null

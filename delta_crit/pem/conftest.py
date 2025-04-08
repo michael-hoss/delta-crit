@@ -3,8 +3,8 @@ import os
 
 import pytest
 
-from delta_crit.crime_utils.crime_utils import get_pem_configs_dir
 from delta_crit.pem.pem_config import PemConfig, pem_config_from_json
+from delta_crit.utils.file_utils import get_pem_configs_dir
 
 
 @pytest.fixture
