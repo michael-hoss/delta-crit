@@ -24,7 +24,7 @@ keywords = ["perception", "safety", "metrics", "criticality", "automated driving
 # Run separately: `pip install -e ./third_party/commonroad-crime`
 dependencies = [
     "dataclasses-json==0.6.7",
-    "omegaconf==2.3.0",
+    "omegaconf==2.3.1",
 ]
 
 [project.optional-dependencies]
